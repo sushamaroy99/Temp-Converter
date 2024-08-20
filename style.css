@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #15e38a;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #e0e0e0;
+    overflow: hidden;
+}
+
+.temp_container {
+    min-width: 530px;
+    width: 40vw;
+    min-height: 340px;
+    height: 54vh;
+    border-radius: 36px;
+    background-color: #e0e0e0;
+    box-shadow: 5px 5px 9px #a4a4a4, -5px -5px 9px #ffffff;
+    padding: 20px;
+    margin: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--primary-color);
+    font-size: 35px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 31px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow: 5px 5px 8px #a1a1a1, -5px -5px 8px #ffffff;
+}
+
+.text_symbol {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--primary-color);
+    padding: 0 20px;
+    font-size: 60px;
+    margin: 15px 0;
+    border-radius: 36px;
+    box-shadow: inset 6px 6px 4px #c5c5c5, inset -6px -6px 4px #fbfbfb;
+}
+
+.input_temperature {
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input {
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 36px;
+    box-shadow: inset 6px 6px 4px #c5c5c5, inset -6px -6px 4px #fbfbfb;
+    outline: none;
+    background: #c0c0c0;
+}
+
+.text_celsius, .text_fahrenheit {
+    font-size: 20px;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 5px 0;
+}
